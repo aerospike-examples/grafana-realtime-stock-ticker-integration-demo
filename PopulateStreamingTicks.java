@@ -6,45 +6,25 @@
 //package com.aerospike.app.PopulateStreamingTicks;
 
 import com.aerospike.client.AerospikeClient;
-import com.aerospike.client.AerospikeException;
 import com.aerospike.client.Bin;
-//import com.aerospike.client.Host;
 import com.aerospike.client.Key;
-//import com.aerospike.client.Operation;
-//import com.aerospike.client.Record;
 import com.aerospike.client.cdt.ListOperation;
-//import com.aerospike.client.policy.ClientPolicy;
-//import com.aerospike.client.policy.GenerationPolicy;
-//import com.aerospike.client.policy.Policy;
 import com.aerospike.client.policy.WritePolicy;
 import com.aerospike.client.cdt.ListOrder;
 import com.aerospike.client.cdt.ListPolicy;
 import com.aerospike.client.cdt.ListWriteFlags;
 import com.aerospike.client.Value.ListValue;
 import com.aerospike.client.Value.LongValue;
-//import com.aerospike.client.Value.IntegerValue;
+import com.aerospike.client.Value;
 import com.aerospike.client.Value.StringValue;
-
-
-//import java.util.HashMap;
-import java.util.ArrayList;
-//import java.util.Date;
-//import java.util.GregorianCalendar;
-//import java.lang.Math;
-//import java.sql.Timestamp;  
-//import java.util.Random;
+import java.util.GregorianCalendar;
 import java.util.Vector;
-//import java.util.List;
+import java.util.ArrayList;
 import java.text.SimpleDateFormat;
-//import java.util.TimeZone;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-//import java.time.LocalDateTime;
 
 /**
  *
